@@ -12,6 +12,7 @@ public class TorpedoStore {
 
   public TorpedoStore(int numberOfTorpedos){
     this.torpedos = numberOfTorpedos;
+    System.out.println("vuhuuu bracnh B");
   }
 
   public boolean fire(int numberOfTorpedos){
