@@ -16,8 +16,8 @@ public class GT4500 implements SpaceShip {
   }
 
   public boolean fireLasers(FiringMode firingMode) {
-    // TODO not implemented yet
-    return false;
+
+    return firingMode == FiringMode.ALL;
   }
 
   /**
@@ -77,8 +77,16 @@ public class GT4500 implements SpaceShip {
         break;
 
       case ALL:
-        // try to fire both of the torpedos
-        //TODO implement feature
+    
+        firingSuccess = false;
+        if(!primaryTorpedoStore.isEmpty()){
+          primaryTorpedoStore.fire(1);
+          firingSuccess = true;
+        }
+        if(!secondaryTorpedoStore.isEmpty()){
+          secondaryTorpedoStore.fire(1);
+          firingSuccess = true;
+        }
 
         break;
     }
