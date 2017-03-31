@@ -20,6 +20,10 @@ To compile and run tests also execute:
 mvn test
 ```
 
+
+
+
+
 (That will be enough to know for the current exercises. If you are more interested, see [this](https://github.com/FTSRG/swsv/wiki/0-Maven) short guide about Maven.)
 
 As this is a really simple project, you can use the command-line build tool and a light-weight IDE like the [Atom](https://atom.io/) editor. Just be sure to enable collapsing directories (_File / Settings / Packages / tree-view / Collapse directories_).
